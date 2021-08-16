@@ -148,7 +148,7 @@ main {
 }
 
 .text__js {
-  background-image: url(assets/img/html.jpg);
+  background-image: url(/assets/img/html.jpg);
   height: 980px;
   color: white;
   padding-top: 450px;
