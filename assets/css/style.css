@@ -1,0 +1,383 @@
+@import url("https://fonts.googleapis.com/css2?family=Alegreya+Sans:wght@300;400;500&display=swap");
+
+/* Reset page */
+* {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  box-sizing: border-box;
+  max-width: 100%;
+}
+
+body {
+  font-family: "Alegrya", sans-serif;
+}
+
+a {
+  text-decoration: none !important;
+  color: lightcyan;
+}
+
+header {
+  position: fixed;
+  background-color: #020825;
+  width: 20%;
+  height: 100%;
+}
+
+.profil__pic {
+  border: 8px solid #2c2f3f;
+  border-radius: 50%;
+  max-width: 250px;
+  max-height: auto;
+  margin: 3rem 5rem 3rem 5rem;
+}
+
+h1 {
+  text-align: center;
+}
+
+.social__network {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  height: 40px;
+  margin: 5px;
+  padding-bottom: 50px;
+}
+
+hr {
+  border: none;
+  border-top: 3px double #333;
+  color: #333;
+  overflow: visible;
+  text-align: center;
+  height: 5px;
+}
+
+.logo__box {
+  margin: 2px;
+}
+
+.navigation {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 50px;
+}
+
+.navigation i {
+  height: 50px;
+  font-size: 1.25rem;
+}
+
+.navigation i {
+  padding-right: 20px;
+}
+
+i {
+  padding: 10px;
+}
+
+main {
+  width: 80%;
+  background: rgb(7, 7, 103);
+  background: linear-gradient(90deg,rgba(7, 7, 103, 1) 0%,
+    rgba(16, 17, 19, 1) 100%);
+  color: #f2f2f2;
+  float: right;
+}
+
+/* Barre de défilement */
+::-webkit-scrollbar {
+  width: 0;
+}
+
+#scrollPath {
+  position: fixed;
+  top: 0;
+  right: 0;
+  width: 10px;
+  height: 100%;
+  background: rgba(255, 255, 255, 0.05);
+}
+
+#progressbar {
+  position: fixed;
+  top: 0;
+  right: 0;
+  width: 10px;
+  background: linear-gradient(to top, #0185f8, #1202fb);
+  animation: animate 5s linear infinite;
+}
+
+@keyframes animate {
+  0%,
+  100% {
+    filter: hue-rotate(0deg);
+  }
+  50% {
+    filter: hue-rotate(360deg);
+  }
+}
+
+#progressbar:before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(to top, #008aff, #00ffe7);
+  filter: blur(10px);
+}
+
+#progressbar:after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(to top, #008aff, #00ffe7);
+  filter: blur(30px);
+}
+
+.page {
+  padding-left: 20px;
+}
+
+.text__js {
+  background-image: url(/assets/img/html.jpg);
+  height: 980px;
+  color: white;
+  padding-top: 450px;
+  font-size: 3rem;
+  text-shadow: 0.2rem 0.2rem 0.2rem rgb(25, 8, 177);
+}
+
+/* Section Description */
+.about__page {
+  display: block;
+  padding: 2rem;
+}
+
+.text__presentation a {
+  color: teal;
+}
+
+h2 {
+  padding: 3rem 0 1.5rem 1rem;
+  color: #C0D6DF;
+}
+
+.divider__bar {
+  border-bottom: 5px solid #020825;
+  width: 200px;
+}
+
+.subtitle__presentation {
+  padding: 2rem;
+}
+
+.text__presentation {
+  text-align: center;
+  font-size: 1.25rem;
+  margin-top: 6rem;
+}
+
+.divider__bar1 {
+  margin: 0 0 2rem 0;
+  border-bottom: 5px solid #020825;
+  width: 300px;
+}
+/*  Section CV  */
+.parcour {
+  display: contents;
+  padding: 2rem;
+  height: 100px;
+}
+
+/* Section compétences */
+.skill {
+  display: block;
+  padding: 2rem;
+}
+
+.divider__bar2 {
+  border-bottom: 5px solid #020825;
+  width: 25%;
+  margin-bottom: 2rem;
+}
+
+.container__skill {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  column-gap: 2rem;
+  row-gap: 2rem;
+}
+
+.label__skill {
+  display: flex;
+  flex-direction: column;
+}
+
+.full__bar {
+  border: 1px solid cornflowerblue;
+  border-radius: 1rem;
+  background-color: cornflowerblue;
+  max-width: 100%;
+  height: 20px;
+}
+
+.progress__bar__html {
+  height: 100%;
+  border: 1px solid rgb(170, 170, 170);
+  border-radius: 1rem;
+  background-color: rgb(170, 170, 170);
+  max-width: 80%;
+}
+
+.progress__bar__html span {
+  margin-left: 50%;
+  font-weight: bold;
+  color: rgb(44, 44, 44);
+}
+
+.progress__bar__css {
+  height: 100%;
+  border: 1px solid rgb(170, 170, 170);
+  border-radius: 1rem;
+  background-color: rgb(170, 170, 170);
+  max-width: 65%;
+}
+
+.progress__bar__css span {
+  margin-left: 50%;
+  font-weight: bold;
+  color: rgb(44, 44, 44);
+}
+
+.progress__bar__php {
+  height: 100%;
+  border: 1px solid rgb(170, 170, 170);
+  border-radius: 1rem;
+  background-color: rgb(170, 170, 170);
+  max-width: 40%;
+}
+
+.progress__bar__php span {
+  margin-left: 50%;
+  font-weight: bold;
+  color: rgb(44, 44, 44);
+}
+
+.progress__bar__mysql {
+  height: 100%;
+  border: 1px solid rgb(170, 170, 170);
+  border-radius: 1rem;
+  background-color: rgb(170, 170, 170);
+  max-width: 60%;
+}
+
+.progress__bar__mysql span {
+  margin-left: 50%;
+  font-weight: bold;
+  color: rgb(44, 44, 44);
+}
+
+.progress__bar__javascript{
+    height: 100%;
+    border: 1px solid rgb(170, 170, 170);
+    border-radius: 1rem;
+    background-color: rgb(170, 170, 170);
+    max-width: 20%;
+}
+
+.progress__bar__javascript span{
+    margin-left: 50%;
+    font-weight: bold;
+    color: rgb(44, 44, 44);
+}
+
+/* Section Projets */
+
+.title__project {
+    padding: 3rem 0 1.5rem 1rem;
+    color: #C0D6DF;  
+}
+
+.project {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+}
+
+.card {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.card span{
+    position: absolute;
+    top: 0;
+    min-width: 250px;
+    height: 250px;
+    display: block;
+    background: #000;
+    border-radius: 50%;
+    transform-origin: 125px 0;
+    transform: rotate(calc(90deg * var(--i)));
+    filter: blur(80px);
+    opacity: 0.75;
+}
+
+.card span:nth-child(1){
+    background: #01b2fe;
+}
+.card span:nth-child(2){
+    background: #ff008c;
+}
+.card span:nth-child(3){
+    background: #ffcd00;
+}
+.card span:nth-child(4){
+    background: #00c456;
+}
+
+
+.card .glass{
+    position: absolute;
+    min-width: 450px;
+    min-height: 300px;
+    background: rgb(255,255,255,0.25);
+    border-radius: 20px;
+    border: 1px xolid #fff;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+}
+
+.card .glass a{
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+}
+
+.card .glass p{
+    padding: 20px;
+    width: 100%;
+    background: rgba(255,255,255,0.2);
+    justify-content: flex-end;
+}
+
+.divider__bar3 {
+  margin: 0 0 2rem 0;
+  border-bottom: 5px solid #020825;
+  width: 150px;
+  position: absolute;
+} 
+
