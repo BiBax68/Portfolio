@@ -198,7 +198,7 @@ main {
   filter: blur(30px);
 }
 
-.page {
+.page{
   padding-left: 20px;
 }
 
@@ -251,6 +251,31 @@ h2 {
   display: contents;
   padding: 2rem;
   height: 100px;
+}
+
+.container__cv__mobile{
+  display: none;
+}
+
+@media screen and (max-width:480px){
+  iframe{
+    display: none;
+  }
+  .container__cv__mobile{
+    display: block;
+  }
+  .container__cv__mobile p{
+    text-align: center;
+    margin: 0 0 2rem 0;
+  }
+  button{
+  margin: auto;
+  display: block;
+  border: 2px solid white;
+  background-color: transparent;
+  color: white;
+  padding: 5px;
+  }
 }
 
 /* Section compétences */
